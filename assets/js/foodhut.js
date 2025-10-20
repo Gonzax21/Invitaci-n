@@ -37,3 +37,15 @@ document.addEventListener('click', () => {
   const audio = document.querySelector('audio');
   audio.play();
 }, { once: true });
+
+
+const audio = document.getElementById("miAudio");
+  const boton = document.getElementById("reproducirPausarBtn");
+
+  boton.addEventListener("click", function() {
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  });

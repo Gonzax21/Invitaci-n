@@ -6,6 +6,9 @@
     <meta name="description" content="Start your development with FoodHut landing page.">
     <meta name="author" content="Devcrud">
     <link rel="icon" type="image/png" href="/assets/imgs/logo2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
     <title>Invitacion</title>
    
     <!-- font icons -->
@@ -26,7 +29,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li>
+                    <button id="reproducirPausarBtn" type="button" class="btn btn-primary bg-transparent">
                     <img class="navbar-musicplay" src="assets/imgs/music.png" >
+                    </button>
                 </li>
             </ul>
             <a class="navbar-brand m-auto" href="#">
@@ -59,7 +64,7 @@
                 <div class="row justify-content-center">
                     <div class="col-sm-8 py-5 my-5">
                         <h2 class="mb-4">18 años de Cumpleaños</h2><br>
-                        <p>Recuerda siempre que eres: <br>
+                        <p id="texto">Recuerda siempre que eres: <br>
                             Mas VALIENTE de lo que crees,<br>
                             Mas FUERTE de lo que pareces,<br>
                             Mas INTELIGENTE de lo que piensas<br>
@@ -99,7 +104,9 @@
             <div class="col-md-6 px-5 has-height-lg middle-items">
                 <h3>UBICACIÓN</h3>
                 <div class="text-muted">
-                    <p><span class="ti-location-pin pr-3"></span> Calle 11, Villa Aberastain, San Juan</p>
+                    <h3><span class="ti-location-pin pr-3"></span> Calle 11, Villa Aberastain, San Juan</h3> <br>
+                    <h3 id="horario">Horarios: 12:00hs a 21:30hs</p> <br>
+                    <h3 id="bebida">llevar bebida para la tarde</p>
                 </div>
             </div>
         </div>
@@ -108,13 +115,13 @@
     <!-- page footer  -->
     
     <div class="bg-dark text-light text-center border-top wow fadeIn">
-        <p class="mb-0 py-3 text-muted small">&copy; Copyright <script>document.write(new Date().getFullYear())</script> Made with <i class="ti-heart text-danger"></i> By <a href="http://devcrud.com">DevCRUD</a></p>
+        <p class="mb-0 py-3 text-muted small">&copy; Copyright <script>document.write(new Date().getFullYear())</script> Made with <i class="ti-heart text-danger"></i> By <a href="#">Gonza</a></p>
     </div>
     <!-- end of page footer -->
 
     <!-- Audio de fondo -->
      
-  <audio autoplay loop>
+  <audio id="miAudio" autoplay loop>
     <source src="assets/audio/Menu.mp3" type="audio/mpeg">
   </audio>
 
