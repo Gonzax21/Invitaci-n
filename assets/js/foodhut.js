@@ -49,3 +49,14 @@ const audio = document.getElementById("miAudio");
       audio.pause();
     }
   });
+
+  const dialog = document.getElementById('modal');
+  const closeButton = document.getElementById('close-modal');
+
+    window.onload = () => {
+      dialog.showModal();
+    };
+
+    closeButton.addEventListener('click', () => {
+      dialog.close();
+    });
